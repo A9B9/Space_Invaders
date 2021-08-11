@@ -4,12 +4,20 @@ from player import Player
 from crt import CRT
 from laser import Laser
 from alien import Alien
+from obstacle import Obstacle
+
+
 
 class Game:
     def __init__(self):
+
+        # Set up the player 
         player_sprite = Player((screen_width/2, screen_height),screen_width,6)
         self.player = pygame.sprite.GroupSingle(player_sprite)
 
+        # Laser setup 
+
+        # 
 
     def run(self):
         self.player.draw(screen)
